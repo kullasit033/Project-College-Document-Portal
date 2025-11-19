@@ -64,7 +64,7 @@
     /* Cards Layout */
     .section-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 25px;
       margin-top: 40px;
       justify-items: center;
@@ -111,6 +111,17 @@
       font-size: 13px;
     }
 
+    /* --------------------------------------------------
+       ✅ จัดให้ 2 การ์ดสุดท้ายอยู่ตรงกลางแถวล่าง
+       -------------------------------------------------- */
+    .section-list > :nth-last-child(2) {
+      grid-column: 2 / 3;
+    }
+
+    .section-list > :last-child {
+      grid-column: 3 / 4;
+    }
+
   </style>
 </head>
 <body>
@@ -132,37 +143,37 @@
     <h2>งานในฝ่ายพัฒนากิจการนักเรียนนักศึกษา</h2>
     <div class="section-list">
       
-      <div class="section-card" onclick="window.location.href='curriculum.html'"> <!--ยังไม่ได้สร้าง-->
+      <div class="section-card" onclick="window.location.href='curriculum.html'">
         <i class="fas fa-book-open"></i>
         <h3>งานกิจกรรม</h3>
         <p>.ส่งเสริมและสนับสนุนการจัดตั้งกิจกรรมชมรมต่างๆ</p>
       </div>
 
-      <div class="section-card" onclick="window.location.href='evaluation.html'"> <!--ยังไม่ได้สร้าง-->
+      <div class="section-card" onclick="window.location.href='evaluation.html'">
         <i class="fas fa-graduation-cap"></i>
         <h3>งานครูที่ปรึกษา</h3>
         <p>ควบคุมดูแลส่งเสริมการจัดทำจัดเก็บรวบรวมข้อมูลประวัติข้อมูลการเรียน</p>
       </div>
 
-      <div class="section-card" onclick="window.location.href='library.html'">    <!--ยังไม่ได้สร้าง-->
+      <div class="section-card" onclick="window.location.href='library.html'">
         <i class="fas fa-book"></i>
         <h3>งานปกครอง</h3>
         <p>ปกครองดูแลนักเรียนนักศึกษาและผู้เข้ารับการฝึกอบรมให้อยู่ในระเบียบวินัย</p>
       </div>
 
-      <div class="section-card" onclick="window.location.href='dual.html'">      <!--ยังไม่ได้สร้าง-->
+      <div class="section-card" onclick="window.location.href='dual.html'">
         <i class="fas fa-users-gear"></i>
         <h3>งานแนะแนวและจัดหางาน</h3>
         <p>ปฐมนิเทศและปัจฉิมนิเทศนักเรียนนักศึกษาเกี่ยวกับการเรียนการสอน</p>
       </div>
 
-      <div class="section-card" onclick="window.location.href='media.html'">     <!--ยังไม่ได้สร้าง-->
+      <div class="section-card" onclick="window.location.href='media.html'">
         <i class="fas fa-photo-video"></i>
         <h3>งานสวัสดิการ</h3>
         <p>จัดและควบคุมดูแลสวัสดิการและการให้บริการด้านต่างๆ</p>
       </div>
 
-      <div class="section-card" onclick="window.location.href='innovation.html'">  <!--ยังไม่ได้สร้าง-->
+      <div class="section-card" onclick="window.location.href='innovation.html'">
         <i class="fas fa-lightbulb"></i>
         <h3>งานโครงการพิเศษ</h3>
         <p>จัดทำแผนปฏิบัติการฝึกอบรมและบริการวิชาชีพร่วมกับแผนกวิชา</p>
